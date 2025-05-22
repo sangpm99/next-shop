@@ -1,10 +1,38 @@
-const getNavItems = [
+import type { NavItems } from "@/layouts/types";
+
+const getNavItems: NavItems = [
   {
-    title: "Dashboard",
-    to: { name: "root" },
-    icon: { icon: "ri-dashboard-3-line" },
-    action: "Read",
-    subject: "Permission.Public",
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "Shops",
+    href: "/shops",
+  },
+  {
+    title: "Categories",
+    href: "/categories",
+  },
+  {
+    title: "About",
+    href: "/about",
+  },
+  {
+    title: "Blogs",
+    href: "/blogs",
+  },
+  {
+    title: "Track Order",
+    href: "/track-order",
+  },
+  {
+    title: "Help Center",
+    children: [
+      {
+        title: "About",
+        href: "/about",
+      },
+    ],
   },
 ];
 

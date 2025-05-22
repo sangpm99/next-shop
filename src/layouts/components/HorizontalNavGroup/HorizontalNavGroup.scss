@@ -1,0 +1,19 @@
+.horizontal-nav-group {
+  .span {
+    font-size: 17px;
+  }
+
+  span,
+  .icon {
+    transition: all 250ms;
+  }
+
+  &:hover span,
+  &:hover .icon{
+    color: rgb(var(--primary));
+  }
+
+  &:hover .icon {
+    transform: rotate(-180deg);
+  }
+}

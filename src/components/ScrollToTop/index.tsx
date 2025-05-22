@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./scrollToTop.scss";
 
-import Button from "@/components/antd/button";
+import Button from "../antd/Button";
 import { Icon } from "@iconify/react";
 
 function ScrollToTop() {

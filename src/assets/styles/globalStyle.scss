@@ -28,7 +28,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inherit, sans-serif;
 }
 
 .btn {
@@ -39,4 +39,9 @@ body {
 .btn-success {
   color: #fff;
   background-color: rgba(var(--success));
+}
+
+.page-container {
+  padding-left: 5%;
+  padding-right: 5%;
 }

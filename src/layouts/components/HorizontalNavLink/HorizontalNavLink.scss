@@ -1,0 +1,13 @@
+.horizontal-nav-link {
+  .span {
+    font-size: 17px;
+  }
+
+  span {
+    transition: color 250ms;
+  }
+
+  &:hover span {
+    color: rgb(var(--primary));
+  }
+}
