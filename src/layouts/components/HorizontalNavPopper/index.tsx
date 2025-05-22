@@ -5,7 +5,6 @@ interface Props {
   popperInlineEnd?: boolean;
   tag?: string;
   contentContainerTag?: string;
-  isRtl?: boolean;
 }
 
 interface PopperContentStyle {
@@ -17,7 +16,6 @@ const HorizontalNavPopper = ({
   popperInlineEnd = false,
   tag = "div",
   contentContainerTag = "div",
-  isRtl = false,
 }: Props) => {
   const refPopperContainer = useRef(null);
   const refPopper = useRef(null);

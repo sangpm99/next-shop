@@ -2,6 +2,7 @@ import type { NavGroup } from "@/layouts/types";
 import { Icon } from "@iconify/react";
 
 import "./HorizontalNavGroup.scss";
+import HorizontalNavPopper from "@/layouts/components/HorizontalNavPopper";
 import HorizontalNavLink from "@/layouts/components/HorizontalNavLink";
 
 interface Props {
@@ -12,7 +13,11 @@ interface Props {
 
 const NavbarGroup = (props: Props) => {
   return (
-    <>
+    <HorizontalNavPopper
+      popperInlineEnd={props.childrenAtEnd ?? false}
+      tag="li"
+      contentContainerTag="ul"
+    >
       <div className="horizontal-nav-group cursor-pointer flex">
         <span>{props.item.title}</span>
         {props.item.children && (
@@ -39,7 +44,7 @@ const NavbarGroup = (props: Props) => {
             return <HorizontalNavLink key={index} item={item} isSubItem />;
           }
         })}
-    </>
+    </HorizontalNavPopper>
   );
 };
 
