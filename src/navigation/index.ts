@@ -32,6 +32,10 @@ const getNavItems: NavItems = [
         title: "About",
         href: "/about",
       },
+      {
+        title: "Contact",
+        href: "/about",
+      },
     ],
   },
 ];

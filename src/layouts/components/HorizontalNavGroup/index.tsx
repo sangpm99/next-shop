@@ -38,7 +38,7 @@ const NavbarGroup = (props: Props) => {
                 item={item}
                 childrenAtEnd={false}
                 isSubItem
-              />
+              ></NavbarGroup>
             );
           } else {
             return <HorizontalNavLink key={index} item={item} isSubItem />;
